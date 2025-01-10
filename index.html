@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- SETTING CHARSET DAN VIEWPORT AGAR HALAMAN RESPONSIF DI MOBILE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5 DOM Project</title>
+
+    <style>
+        /* STYLE KERANJANG BUNGA, AGAR ADA BORDER DAN PADDING */
+        #basket {
+            border: 2px dashed #000;   /* BORDER PUTUS-PUTUS HITAM DI KERANJANG */
+            padding: 10px;              /* PADDING DI DALAM KERANJANG */
+            min-height: 100px;          /* TINGGI MINIMAL KERANJANG */
+            margin-top: 20px;           /* JARAK ATAS AGAR GAK BERDEKETAN DENGAN ELEMEN LAIN */
+        }
+
+        /* STYLE UNTUK GAMBAR BUNGA, AGAR LEBARNYA PAS DAN ADA JARAK */
+        img {
+            width: 100px;              /* LEBAR GAMBAR */
+            margin: 10px;              /* JARAK ANTAR GAMBAR */
+            cursor: pointer;          /* KURSOR JADI TANDA TANGAN KETIKA MOUSE OVER GAMBAR */
+        }
+
+        /* STYLE UNTUK TOMBOL, AGAR ADA JARAK */
+        button {
+            margin: 10px;              /* JARAK ANTAR TOMBOL */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- JUDUL UTAMA HALAMAN -->
+    <h1>Tugas 5 DOM Project | Tegar Maulana</h1>
+
+    <!-- DIV UNTUK MENAMPILKAN GAMBAR BUNGA -->
+    <div id="flowers">
+        <!-- GAMBAR BUNGA PERTAMA -->
+        <img src="c:\Users\66teg\Downloads\thumbnails\flo1.jpg" alt="Bunga 1" id="flower1">
+        <!-- GAMBAR BUNGA KEDUA -->
+        <img src="c:\Users\66teg\Downloads\thumbnails\flo2.jpg" alt="Bunga 2" id="flower2">
+        <!-- GAMBAR BUNGA KETIGA -->
+        <img src="c:\Users\66teg\Downloads\thumbnails\flo3.jpg" alt="Bunga 3" id="flower3">
+    </div>
+
+    <!-- TOMBOL UNTUK MENGUBAH WARNA TEKS -->
+    <button id="changeTextColor">Change Text Color</button>
+
+    <!-- TOMBOL UNTUK MENGUBAH WARNA LATAR BELAKANG -->
+    <button id="changeBackgroundColor">Change Background Color</button>
+
+    <!-- TULISAN PENJELASAN FUNGSI TOMBOL -->
+    <p>contoh doang ini buat rubah warna teks 🗿</p>
+
+    <!-- JUDUL UNTUK BAGIAN KERANJANG BUNGA -->
+    <h2>Keranjang Bunga</h2>
+
+    <!-- TEMPAT UNTUK MENAMBAHKAN GAMBAR YANG DITAMBAHKAN KE KERANJANG -->
+    <div id="basket"></div>
+
+    <!-- FILE JAVASCRIPT YANG AKAN MENANGANI INTERAKSI PENGGUNA -->
+    <script src="dom.js"></script>
+</body>
+</html>
